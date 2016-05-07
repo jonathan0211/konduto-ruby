@@ -28,6 +28,7 @@ class KondutoOrder
       self.travel = KondutoTravel.new
       self.device = KondutoDevice.new
       self.geolocation = KondutoGeolocation.new
+      self.navigation = KondutoNavigation.new
     else
       params = KondutoUtils.deep_symbolize_keys params
       if params[shipping_address].nil?

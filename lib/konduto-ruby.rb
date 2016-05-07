@@ -63,7 +63,7 @@ class KondutoRuby
       order.id = order_id unless order.id
       return order
     else
-      raise build_error_message(JSON.parse(response.body)['message'])
+      raise (JSON.parse(response.body)['message']).to_s
     end
 
 
@@ -76,7 +76,7 @@ class KondutoRuby
     if response.kind_of? Net::HTTPSuccess
       return KondutoOrder.new JSON.parse(response.entity)['order']
     else
-      raise build_error_message(JSON.parse(response.body)['message'])
+      raise (JSON.parse(response.body)['message']).to_s
     end
   end
 
@@ -94,24 +94,7 @@ class KondutoRuby
       order.status = resposta['new_status']
       return order
     else
-      raise build_error_message(JSON.parse(response.body)['message'])
-    end
-  end
-
-  def build_error_message(error)
-    expected = error['why']['expected']
-    if expected.is_a?(Array)
-      expected = ''
-      expected.each_with_index do |ex,index|
-        expected += ex
-        expected += ' - ' unless (index == expected.size - 1)
-      end
-    end
-
-    if error['error_identifier'].nil?
-      return "-> Where: #{error['where']}\n->Expected: #{expected}, Found: #{error['why']['found']}"
-    else
-      return "#->{error['error_identifier']} - #{error['notification']} / Where: #{error['where']}\n-> Expected: #{expected}, Found: #{error['why']['found']}"
+      raise (JSON.parse(response.body)['message']).to_s
     end
   end
 end
