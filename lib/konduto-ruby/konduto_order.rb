@@ -8,7 +8,9 @@ class KondutoOrder
   require 'konduto-ruby/konduto_payment'
   require 'konduto-ruby/konduto_item'
   require 'konduto-ruby/konduto_travel'
+  require 'konduto-ruby/konduto_passenger'
   require 'konduto-ruby/konduto_utils'
+  require 'konduto-ruby/konduto_order_status'
   require 'json/pure'
 
   attr_accessor :id, :visitor, :timestamp, :total_amount, :shipping_amount, :tax_amount, :customer, :currency, \

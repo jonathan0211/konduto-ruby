@@ -1,5 +1,6 @@
 class KondutoTravel
   require 'konduto-ruby/konduto_travel_info'
+  require 'konduto-ruby/konduto_passenger'
   require 'konduto-ruby/konduto_utils'
   attr_accessor :type, :departure, :return, :passengers
   TYPE_TRAVEL = [:flight, :bus]

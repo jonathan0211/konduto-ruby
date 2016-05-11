@@ -2,7 +2,7 @@ class KondutoRuby
   require 'uri'
   require 'base64'
   require 'net/http'
-  require 'konduto-ruby/konduto_order_status'
+  require 'konduto-ruby/konduto_order'
   attr_accessor :request_body, :response_body, :endpoint
   attr_reader :api_key
 
