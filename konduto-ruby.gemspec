@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version      = '1.0.0'
   spec.authors      = ['Gabriel Custodio', 'Jonathan Cardoso de Campos']
   spec.email        = [%(gcmartins93@gmail.com jonathancardosodecampos@gmail.com)]
-  spec.homepage     = ''
+  spec.homepage     = 'https://github.com/jonathan0211/konduto-ruby'
   spec.summary      = ''
   spec.description  = ''
 
@@ -11,4 +11,6 @@ Gem::Specification.new do |spec|
   spec.require_path = 'lib'
 
   spec.license      = 'MIT'
+
+  spec.add_dependency 'json_pure', '~> 1.8'
 end
