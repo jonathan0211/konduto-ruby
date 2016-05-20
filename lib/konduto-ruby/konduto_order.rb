@@ -13,7 +13,6 @@ class KondutoOrder
   require 'konduto-ruby/konduto_travel'
   require 'konduto-ruby/konduto_travel_info'
   require 'konduto-ruby/konduto_utils'
-  require 'json/pure'
 
   attr_accessor :id, :visitor, :timestamp, :total_amount, :shipping_amount, :tax_amount, :customer, :currency, \
                 :installments, :ip, :score, :shipping_address, :billing_address, :recommendation, :status, \
@@ -145,10 +144,6 @@ class KondutoOrder
         navigation:self.navigation.to_hash
     }
     KondutoUtils.remove_nil_keys_from_hash(hash)
-  end
-
-  def to_json
-    self.to_hash.to_json
   end
 
   def to_json
