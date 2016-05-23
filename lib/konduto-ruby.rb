@@ -72,9 +72,14 @@ class KondutoRuby
   end
 
   def analyze order
+    begin
     post = Net::HTTP::Post.new(order_url)
     response = send_request(post, order.to_json)
     response.entity
+    rescue Exception => e
+      p e.backtrace.join'\n'
+    end
+
   end
 
   def update_order_status order, new_status, comments
