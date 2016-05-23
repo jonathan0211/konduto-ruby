@@ -3,8 +3,10 @@ class KondutoRuby
   require 'base64'
   require 'net/http'
   require 'konduto-ruby/konduto_order'
+  require 'json'
   attr_accessor :request_body, :response_body, :endpoint
   attr_reader :api_key
+
 
   def initialize api_key, endpoint = 'https://api.konduto.com/v1'
     @endpoint = URI.parse(endpoint)
@@ -72,12 +74,7 @@ class KondutoRuby
   def analyze order
     post = Net::HTTP::Post.new(order_url)
     response = send_request(post, order.to_json)
-
-    if response.kind_of? Net::HTTPSuccess
-      return KondutoOrder.new JSON.parse(response.entity)['order']
-    else
-      raise (JSON.parse(response.body)['message']).to_s
-    end
+    response.entity
   end
 
   def update_order_status order, new_status, comments
