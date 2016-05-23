@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6dbbc0-f5e5-4b94-a92a-f1f9e861472c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/konduto-ruby.rb" afterPath="$PROJECT_DIR$/lib/konduto-ruby.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konduto-ruby.gemspec" afterPath="$PROJECT_DIR$/konduto-ruby.gemspec" />
     </list>
     <ignored path="konduto-ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="konduto-ruby.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="konduto-ruby.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/konduto-ruby.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
@@ -87,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="konduto-ruby.gemspec" pinned="false" current-in-tab="false">
+      <file leaf-file-name="konduto-ruby.gemspec" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/konduto-ruby.gemspec">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -136,10 +135,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/konduto-ruby/konduto_travel.rb" />
-        <option value="$PROJECT_DIR$/konduto-ruby.gemspec" />
         <option value="$PROJECT_DIR$/lib/konduto-ruby/konduto_order.rb" />
         <option value="$PROJECT_DIR$/test/test_konduto-ruby.rb" />
         <option value="$PROJECT_DIR$/lib/konduto-ruby.rb" />
+        <option value="$PROJECT_DIR$/konduto-ruby.gemspec" />
       </list>
     </option>
   </component>
@@ -382,12 +381,12 @@
       <workItem from="1463592688357" duration="83000" />
       <workItem from="1463754451060" duration="1721000" />
       <workItem from="1464029180739" duration="5890000" />
-      <workItem from="1464035565060" duration="1962000" />
+      <workItem from="1464035565060" duration="2566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11566000" />
+    <option name="totallyTimeSpent" value="12170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -812,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konduto-ruby.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_konduto-ruby.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -832,6 +823,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konduto-ruby.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
