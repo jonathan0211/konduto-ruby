@@ -25,6 +25,8 @@ module Konduto
       name = options[:alias] || model
 
       self.send(:define_method, name) do
+        instance_variable_set("@#{name}", []) if instance_variable_get("@#{name}").nil?
+
         instance_variable_get("@#{name}")
       end
 

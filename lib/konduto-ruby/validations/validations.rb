@@ -12,6 +12,7 @@ module Konduto
       if respond_to? :required_attr
         required_attr.each do |attr|
           return false if send(attr).nil?
+          return false if send(attr).is_a?(Array) && send(attr).empty?
         end
       end
 
