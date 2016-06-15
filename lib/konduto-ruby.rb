@@ -1,8 +1,12 @@
+require 'json'
+require 'konduto-ruby/konduto_base'
+require 'konduto-ruby/konduto_travel_leg'
+Dir[__dir__ + '/konduto-ruby/*.rb'].each { |file| require file }
+
 class KondutoRuby
   require 'uri'
   require 'base64'
   require 'net/http'
-  require 'konduto-ruby/konduto_order'
   attr_accessor :request_body, :response_body, :endpoint
   attr_reader :api_key
 
@@ -96,5 +100,9 @@ class KondutoRuby
     else
       raise (JSON.parse(response.body)['message']).to_s
     end
+  end
+
+  def debug
+    "API Key: #{@api_key}\nEndpoint: #{@endpoint}\n"
   end
 end
